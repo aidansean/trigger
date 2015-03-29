@@ -1,0 +1,162 @@
+canvas{
+  border : 0px solid black ;
+  margin : 0px ;
+}
+canvas#canvas_eventDisplay{
+  border-top : 9px solid #001100 ;
+  border-bottom : 9px solid #001100 ;
+  display : block ;
+}
+
+div#div_gameWrapper{
+  width : 750px ;
+  height : 1006px ;
+  overflow : hidden ;
+  border : 9px solid #001100 ;
+  margin : auto ;
+  margin-top : 20px ;
+  background : #ffffff ;
+}
+
+div#div_teamnamet{
+  height : 100px ;
+  font : 20pt arial ;
+  text-align : center ;
+  vertical-align : middle ;
+  padding : 0px ;
+}
+
+div#div_teamname{
+  font : 25pt bold arial , sans-serif ;
+  padding-top : 0.33em ;
+  background : #001100 ;
+  width : 150px ;
+  color : white ;
+  text-align : center ;
+  line-height : 1.2em ;
+}
+div#div_header{
+  width : 600px ;
+  border : 1px solid #001100 ;
+}
+
+img#img_header, img#img_footer{
+  display : block ;
+}
+
+div.tab{ display : table ; }
+div.tab_row { display : table-row ; width : 100% ; }
+div.tab_cell{ display : table-cell ; vertical-align : top ; }
+
+body{ background : #000000 ; }
+
+table#table_decisions{
+  width : 100% ;
+}
+th.decision, td.decision{
+  text-align : center ;
+  font : 12pt arial , sans-serif ;
+}
+
+table#table_events_summary{
+  width : 90% ;
+}
+th.events_summary, td.events_summary{
+  font : 12pt arial ;
+}
+
+div#div_footer{
+  color : #001100 ;
+  font : 30pt arial ;
+  text-align : center ;
+  width : 750px ;
+  vertical-align : middle ;
+  background : url('images/footer.png') ;
+}
+
+div#div_hidden{
+  display : none ;
+}
+div#div_topology{
+  height : 136px ;
+  vertical-align : middle ;
+  line-height : 1.25em ;
+  color : black ;
+  background : rgba(255,255,255,0.75) ;
+}
+
+
+
+
+
+
+h2#h2_team_ATLAS, h2#h2_team_CMS{
+  font : 30pt arial ;
+  color : white ;
+  text-align : center ;
+  background : black ;
+  padding : 0.5em ;
+  margin : 0px ;
+}
+canvas#canvas_ATLAS, canvas#canvas_CMS{
+  border : 5px solid yellow ;
+}
+div#div_spyWrapper{
+  width : 1200px ;
+  margin : auto ;
+  border : 5px solid black ;
+  text-align : center ;
+}
+
+div#div_spy_tab{
+  width : 80% ;
+  margin : auto ;
+}
+div.spy_tab_cell{
+  padding : 20px ;
+}
+
+button#button_analyse_ATLAS, button#button_analyse_CMS{
+  width : 400px ;
+  height : 100px ;
+  font : 30pt arial ;
+  color : white ;
+  background : black ;
+  display : none ;
+}
+
+button#button_freeze, button#button_combine{
+  width : 600px ;
+  height : 100px ;
+  font : 30pt arial ;
+  color : black ;
+  background : white ;
+}
+button#button_combine{
+  display : none ;
+}
+div.center{
+  text-align : center ;
+  width : 100% ;
+}
+th#th_ATLAS_nSigma, th#th_CMS_nSigma{
+  color : white ;
+  text-align : center ;
+  font : 60pt arial ;
+  width : 800px ;
+}
+table#table_combo{
+  display : none ;
+  width : 800px ;
+  margin : auto ;
+  border : 2px solid black ;
+}
+th#th_final_result{
+  font : 60pt arial ;
+  text-align : center ;
+}
+th.combo{
+  font : 30pt arial ;
+  text-align : center ;
+}
+

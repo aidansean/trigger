@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd" >
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>Trigger that Higgs!</title> 
+<link type="text/css" rel="stylesheet" media="all" href="style.css" />
+<script type="text/javascript" src="settings.js"></script>
+<script type="text/javascript" src="helper.js"></script>
+<script type="text/javascript" src="detector.js"></script>
+<script type="text/javascript" src="particle.js"></script>
+<script type="text/javascript" src="cell.js"></script>
+<script type="text/javascript" src="draw.js"></script>
+<script type="text/javascript" src="collision.js"></script>
+<script type="text/javascript" src="histogram.js"></script>
+<script type="text/javascript" src="trigger.js"></script>
+<script type="text/javascript" src="header_footer.js"></script>
+<script type="text/javascript" src="functions.js"></script>
+</head>
+<body onload="start()">
+
+<div id="div_gameWrapper">
+
+<div class="tab">
+  <div id="div_teamname" class="tab_cell">Team CERN</div>
+  <div id="div_header"   class="tab_cell"></div>
+</div>
+
+<canvas id="canvas_eventDisplay" width="750px" height="750px"></canvas>
+
+<div id="div_footer" class="tab">
+</div>
+
+</div>
+
+<pre id="pre_debug"></pre>
+
+<div id="div_hidden">
+  <img id="img_ATLAS" src="images/ATLAS.jpg" />
+  <img id="img_CMS"   src="images/CMS.jpg"   />
+  <img id="img_header" src="images/header.png"/>
+  <img id="img_footer" src="images/footer.png"/>
+  
+  <table id="table_events_summary">
+      <tbody>
+        <tr>
+          <th class="events_summary">Total events saved:</th>
+          <td class="events_summary" id="td_total_events"><span id="span_total_events_saved">0</span>/<span id="span_total_events_delivered">0</span></td>
+          
+          <th class="events_summary">True positives:</th>
+          <td class="events_summary" id="td_true_positives">0</td>
+        </tr>
+        <tr>
+          <th class="events_summary">"Higgsy" events:</th>
+          <td class="events_summary" id="td_higgsy_events">0</td>
+          
+          <th class="events_summary">False positives:</th>
+          <td class="events_summary" id="td_false_positives">0</td>
+        </tr>
+        <tr>
+          <th class="events_summary">Event number:</th>
+          <td class="events_summary"><span id="span_eventNumber">0</span>/<span id="span_eventsPerShift">0</span></td>
+          
+          <th class="events_summary">False negatives:</th>
+          <td class="events_summary" id="td_false_negatives">0</td>
+        </tr>
+        <tr>
+          <th class="events_summary">Shift number:</th>
+          <td class="events_summary"><span id="span_shiftNumber">0</span>/<span id="span_shiftsPerGame">0</span></td>
+          
+          <th class="events_summary">Score:</th>
+          <td class="events_summary" id="td_score">0</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <div id="div_topology" class="tab_cell">
+      Trigger events that contain:<br />
+      <span id="span_trigger_description"></span>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd" >
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>Trigger that Higgs!</title> 
+<link type="text/css" rel="stylesheet" media="all" href="style.css" />
+<script type="text/javascript" src="settings.js"></script>
+<script type="text/javascript" src="helper.js"></script>
+<script type="text/javascript" src="detector.js"></script>
+<script type="text/javascript" src="particle.js"></script>
+<script type="text/javascript" src="cell.js"></script>
+<script type="text/javascript" src="draw.js"></script>
+<script type="text/javascript" src="collision.js"></script>
+<script type="text/javascript" src="histogram.js"></script>
+<script type="text/javascript" src="trigger.js"></script>
+<script type="text/javascript" src="functions_spy.js"></script>
+</head>
+<body onload="start()">
+
+<div id="div_spyWrapper" style="background:rgba(255,255,255,0.8)">
+
+<div class="tab" id="div_spy_tab">
+  <div class="tab_row">
+    <div id="div_spy_ATLAS" class="tab_cell spy_tab_cell">
+      <h2 id="h2_team_ATLAS">Team ATLAS</h2>
+      <canvas id="canvas_ATLAS" width="500px" height="500px"></canvas>
+      <button type="button" id="button_analyse_ATLAS">Analyse!</button>
+    </div>
+    <div id="div_spy_CMS"   class="tab_cell spy_tab_cell">
+      <h2 id="h2_team_CMS">Team CMS</h2>
+      <canvas id="canvas_CMS"   width="500px" height="500px"></canvas>
+      <button type="button" id="button_analyse_CMS">Analyse!</button>
+    </div>
+  </div>
+</div>
+<div class="center">
+  <button type="button" id="button_freeze">Freeze results!</button>
+  <button type="button" id="button_combine">Combine results!</button>
+  <table id="table_combo">
+    <tbody id="tbody_combo">
+      <tr>
+        <th id="th_ATLAS_nSigma">ATLAS: <span id="span_ATLAS_nSigma"></span></th>
+      </tr>
+      <tr>
+        <th id="th_CMS_nSigma">CMS: <span id="span_CMS_nSigma"></span></th>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+<div id="div_spy_footer" class="tab">
+</div>
+
+</div>
+
+<pre id="pre_debug"></pre>
+
+<div id="div_hidden">
+  <img id="img_ATLAS" src="images/ATLAS.jpg" />
+  <img id="img_CMS"   src="images/CMS.jpg"   />
+  <img id="img_header" src="images/header.png"/>
+  <img id="img_footer" src="images/footer.png"/>
+</div>
+
+</body>
+</html>
