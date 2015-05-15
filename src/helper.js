@@ -6,7 +6,7 @@ function random_color(lower){
   return color ;
 }
 
-function increment_td(id){ Get(id).innerHTML =parseInt(Get(id).innerHTML) + 1 ; }
+//function increment_td(id){ Get(id).innerHTML = parseInt(Get(id).innerHTML) + 1 ; }
 
 function  sqrt(x){ return Math.sqrt(x) ; }
 function  acos(x){ return Math.acos(x) ; }

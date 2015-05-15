@@ -18,7 +18,7 @@ function draw_eventDisplay(collision, context){
     collision.jets[i].draw(context) ;
   }
   for(var i=0 ; i<collision.leptons.length ; i++){
-    //collision.leptons[i].draw(context) ;
+    collision.leptons[i].draw(context) ;
   }
   if(overlay_cells) draw_cells(context) ;
 
